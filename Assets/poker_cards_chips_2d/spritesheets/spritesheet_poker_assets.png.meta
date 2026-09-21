@@ -1,0 +1,4147 @@
+fileFormatVersion: 2
+guid: 5b86b31fdc43fb3439bbccfefd10c26a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4414946565453188749
+    second: spritesheet_poker_assets_0
+  - first:
+      213: -4453350461962380865
+    second: spritesheet_poker_assets_1
+  - first:
+      213: -9119330253518642820
+    second: spritesheet_poker_assets_2
+  - first:
+      213: -2678803183272096156
+    second: spritesheet_poker_assets_3
+  - first:
+      213: 6260706393201059015
+    second: spritesheet_poker_assets_4
+  - first:
+      213: 3966604800505425107
+    second: spritesheet_poker_assets_5
+  - first:
+      213: -8299244447409208599
+    second: spritesheet_poker_assets_6
+  - first:
+      213: -4307903821981947726
+    second: spritesheet_poker_assets_7
+  - first:
+      213: -7328396374096747516
+    second: spritesheet_poker_assets_8
+  - first:
+      213: -8088088981352383414
+    second: spritesheet_poker_assets_9
+  - first:
+      213: -9078097492040767076
+    second: spritesheet_poker_assets_10
+  - first:
+      213: 973398037825967092
+    second: spritesheet_poker_assets_11
+  - first:
+      213: -4172256084759463613
+    second: spritesheet_poker_assets_12
+  - first:
+      213: -4748827257135050343
+    second: spritesheet_poker_assets_13
+  - first:
+      213: -2319088656345753836
+    second: spritesheet_poker_assets_14
+  - first:
+      213: -3780415661670407928
+    second: spritesheet_poker_assets_15
+  - first:
+      213: 3627535836339545689
+    second: spritesheet_poker_assets_16
+  - first:
+      213: 2632837337668950598
+    second: spritesheet_poker_assets_17
+  - first:
+      213: 2531954009146054336
+    second: spritesheet_poker_assets_18
+  - first:
+      213: -9180923147460482868
+    second: spritesheet_poker_assets_19
+  - first:
+      213: -8355245541683552574
+    second: spritesheet_poker_assets_20
+  - first:
+      213: -5211631776525559590
+    second: spritesheet_poker_assets_21
+  - first:
+      213: -2161909652636829933
+    second: spritesheet_poker_assets_22
+  - first:
+      213: 3196060647987543268
+    second: spritesheet_poker_assets_23
+  - first:
+      213: 8793486427321609555
+    second: spritesheet_poker_assets_24
+  - first:
+      213: -6267659853835301916
+    second: spritesheet_poker_assets_25
+  - first:
+      213: 388426527953879134
+    second: spritesheet_poker_assets_26
+  - first:
+      213: 7483205353252331062
+    second: spritesheet_poker_assets_27
+  - first:
+      213: 3617134660187657917
+    second: spritesheet_poker_assets_28
+  - first:
+      213: 8561716018776397708
+    second: spritesheet_poker_assets_29
+  - first:
+      213: -1424433366325830993
+    second: spritesheet_poker_assets_30
+  - first:
+      213: -6852160331603163259
+    second: spritesheet_poker_assets_31
+  - first:
+      213: 3019945567675422066
+    second: spritesheet_poker_assets_32
+  - first:
+      213: -7400425578678189657
+    second: spritesheet_poker_assets_33
+  - first:
+      213: -7178843469663520541
+    second: spritesheet_poker_assets_34
+  - first:
+      213: 4375927112446238558
+    second: spritesheet_poker_assets_35
+  - first:
+      213: 7414847207034664595
+    second: spritesheet_poker_assets_36
+  - first:
+      213: 2209326252821319873
+    second: spritesheet_poker_assets_37
+  - first:
+      213: -2731607648185664473
+    second: spritesheet_poker_assets_38
+  - first:
+      213: 8659475645914854599
+    second: spritesheet_poker_assets_39
+  - first:
+      213: -2496037553146267384
+    second: spritesheet_poker_assets_40
+  - first:
+      213: -7441361400535994711
+    second: spritesheet_poker_assets_41
+  - first:
+      213: 7154517901211832963
+    second: spritesheet_poker_assets_42
+  - first:
+      213: -7501925643062886275
+    second: spritesheet_poker_assets_43
+  - first:
+      213: 5073999433442582443
+    second: spritesheet_poker_assets_44
+  - first:
+      213: -3606362894838268874
+    second: spritesheet_poker_assets_45
+  - first:
+      213: 7091228453150142783
+    second: spritesheet_poker_assets_46
+  - first:
+      213: -1942088909347272290
+    second: spritesheet_poker_assets_47
+  - first:
+      213: 5876873324089451253
+    second: spritesheet_poker_assets_48
+  - first:
+      213: -1563571658205907288
+    second: spritesheet_poker_assets_49
+  - first:
+      213: -147412581737784625
+    second: spritesheet_poker_assets_50
+  - first:
+      213: -2790005070093535517
+    second: spritesheet_poker_assets_51
+  - first:
+      213: -7862197366605745670
+    second: spritesheet_poker_assets_52
+  - first:
+      213: 7423223512003883829
+    second: spritesheet_poker_assets_53
+  - first:
+      213: 3269114876036568986
+    second: spritesheet_poker_assets_54
+  - first:
+      213: 850886794172188017
+    second: spritesheet_poker_assets_55
+  - first:
+      213: 263301476336499368
+    second: spritesheet_poker_assets_56
+  - first:
+      213: -1417323597679792177
+    second: spritesheet_poker_assets_57
+  - first:
+      213: 3565327993621906553
+    second: spritesheet_poker_assets_58
+  - first:
+      213: 1058053288182387588
+    second: spritesheet_poker_assets_59
+  - first:
+      213: 5672437710410335302
+    second: spritesheet_poker_assets_60
+  - first:
+      213: 511595418133924145
+    second: spritesheet_poker_assets_61
+  - first:
+      213: 4064526511216529189
+    second: spritesheet_poker_assets_62
+  - first:
+      213: 3354420951068207376
+    second: spritesheet_poker_assets_63
+  - first:
+      213: -5723722589504294320
+    second: spritesheet_poker_assets_64
+  - first:
+      213: -8028259068044610193
+    second: spritesheet_poker_assets_65
+  - first:
+      213: -4617433264830267256
+    second: spritesheet_poker_assets_66
+  - first:
+      213: -3880523996526181495
+    second: spritesheet_poker_assets_67
+  - first:
+      213: 1397920256883507001
+    second: spritesheet_poker_assets_68
+  - first:
+      213: 8100596018255421792
+    second: spritesheet_poker_assets_69
+  - first:
+      213: -7864066493861715050
+    second: spritesheet_poker_assets_70
+  - first:
+      213: -4571474420902994728
+    second: spritesheet_poker_assets_71
+  - first:
+      213: -8957926022972799011
+    second: spritesheet_poker_assets_72
+  - first:
+      213: -4780174809006341939
+    second: spritesheet_poker_assets_73
+  - first:
+      213: 2164086319361945179
+    second: spritesheet_poker_assets_74
+  - first:
+      213: 1247530791658526004
+    second: spritesheet_poker_assets_75
+  - first:
+      213: -791812460204758418
+    second: spritesheet_poker_assets_76
+  - first:
+      213: -4759310855452943645
+    second: spritesheet_poker_assets_77
+  - first:
+      213: 7454856310517291373
+    second: spritesheet_poker_assets_78
+  - first:
+      213: -1496677494398127120
+    second: spritesheet_poker_assets_79
+  - first:
+      213: -3592053490470613601
+    second: spritesheet_poker_assets_80
+  - first:
+      213: 5579446038905610898
+    second: spritesheet_poker_assets_81
+  - first:
+      213: 2419682464115702940
+    second: spritesheet_poker_assets_82
+  - first:
+      213: 5520866666353714217
+    second: spritesheet_poker_assets_83
+  - first:
+      213: 2981690129995941469
+    second: spritesheet_poker_assets_84
+  - first:
+      213: 6342181501903624079
+    second: spritesheet_poker_assets_85
+  - first:
+      213: 236154943131157930
+    second: spritesheet_poker_assets_86
+  - first:
+      213: 4833042523879207328
+    second: spritesheet_poker_assets_87
+  - first:
+      213: -3030095077386356154
+    second: spritesheet_poker_assets_88
+  - first:
+      213: 2570061287307835781
+    second: spritesheet_poker_assets_89
+  - first:
+      213: -829150484146423518
+    second: spritesheet_poker_assets_90
+  - first:
+      213: 2669728094787124075
+    second: spritesheet_poker_assets_91
+  - first:
+      213: -3825891581620525008
+    second: spritesheet_poker_assets_92
+  - first:
+      213: 238786021191232610
+    second: spritesheet_poker_assets_93
+  - first:
+      213: 5243013733088104218
+    second: spritesheet_poker_assets_94
+  - first:
+      213: 2074389628102813129
+    second: spritesheet_poker_assets_95
+  - first:
+      213: 6984697705448073152
+    second: spritesheet_poker_assets_96
+  - first:
+      213: -2688457459818821910
+    second: spritesheet_poker_assets_97
+  - first:
+      213: -6644273765762081231
+    second: spritesheet_poker_assets_98
+  - first:
+      213: 5164210335766295604
+    second: spritesheet_poker_assets_99
+  - first:
+      213: -8773407394813865930
+    second: spritesheet_poker_assets_100
+  - first:
+      213: 6558790093532189374
+    second: spritesheet_poker_assets_101
+  - first:
+      213: -5971527068103886939
+    second: spritesheet_poker_assets_102
+  - first:
+      213: -4674054446492028275
+    second: spritesheet_poker_assets_103
+  - first:
+      213: 5678211508714870833
+    second: spritesheet_poker_assets_104
+  - first:
+      213: 227661099642898257
+    second: spritesheet_poker_assets_105
+  - first:
+      213: 6549218657776959596
+    second: spritesheet_poker_assets_106
+  - first:
+      213: 1070586681735391907
+    second: spritesheet_poker_assets_107
+  - first:
+      213: 2612994469777912436
+    second: spritesheet_poker_assets_108
+  - first:
+      213: 4098564306717340732
+    second: spritesheet_poker_assets_109
+  - first:
+      213: -4397145519993364776
+    second: spritesheet_poker_assets_110
+  - first:
+      213: 8194383889417730696
+    second: spritesheet_poker_assets_111
+  - first:
+      213: -3878033346568948752
+    second: spritesheet_poker_assets_112
+  - first:
+      213: 3082425273067089162
+    second: spritesheet_poker_assets_113
+  - first:
+      213: 2369478226649292102
+    second: spritesheet_poker_assets_114
+  - first:
+      213: -7550282694579086739
+    second: spritesheet_poker_assets_115
+  - first:
+      213: -522071566113765634
+    second: spritesheet_poker_assets_116
+  - first:
+      213: 7707396900074649004
+    second: spritesheet_poker_assets_117
+  - first:
+      213: -5464040010613622957
+    second: spritesheet_poker_assets_118
+  - first:
+      213: -725263103218585630
+    second: spritesheet_poker_assets_119
+  - first:
+      213: -473053124382987557
+    second: spritesheet_poker_assets_120
+  - first:
+      213: -2162172094749127386
+    second: spritesheet_poker_assets_121
+  - first:
+      213: -7871970272751286399
+    second: spritesheet_poker_assets_122
+  - first:
+      213: -1734156765218698825
+    second: spritesheet_poker_assets_123
+  - first:
+      213: -9218234207164487818
+    second: spritesheet_poker_assets_124
+  - first:
+      213: 3772326668357973565
+    second: spritesheet_poker_assets_125
+  - first:
+      213: 2403678708764461075
+    second: spritesheet_poker_assets_126
+  - first:
+      213: 4642273807978772721
+    second: spritesheet_poker_assets_127
+  - first:
+      213: 739528291484082355
+    second: spritesheet_poker_assets_128
+  - first:
+      213: 6356292873209178410
+    second: spritesheet_poker_assets_129
+  - first:
+      213: 6235892864063309768
+    second: spritesheet_poker_assets_130
+  - first:
+      213: -224004417857871968
+    second: spritesheet_poker_assets_131
+  - first:
+      213: -9211554333436014777
+    second: spritesheet_poker_assets_132
+  - first:
+      213: 9147568225168051601
+    second: spritesheet_poker_assets_133
+  - first:
+      213: -9086967783096841377
+    second: spritesheet_poker_assets_134
+  - first:
+      213: -1047504478267290274
+    second: spritesheet_poker_assets_135
+  - first:
+      213: -6271432840112972520
+    second: spritesheet_poker_assets_136
+  - first:
+      213: 3308473570348767649
+    second: spritesheet_poker_assets_137
+  - first:
+      213: -2475274819848945261
+    second: spritesheet_poker_assets_138
+  - first:
+      213: -6532753458421102099
+    second: spritesheet_poker_assets_139
+  - first:
+      213: -3297340605533408347
+    second: spritesheet_poker_assets_140
+  - first:
+      213: 2267964511854704007
+    second: spritesheet_poker_assets_141
+  - first:
+      213: -8119310419747547629
+    second: spritesheet_poker_assets_142
+  - first:
+      213: 354548288655754405
+    second: spritesheet_poker_assets_143
+  - first:
+      213: 7992435678811596981
+    second: spritesheet_poker_assets_144
+  - first:
+      213: -291670326138297190
+    second: spritesheet_poker_assets_145
+  - first:
+      213: 522114757967699677
+    second: spritesheet_poker_assets_146
+  - first:
+      213: -3636569052937927001
+    second: spritesheet_poker_assets_147
+  - first:
+      213: 8823463593633065745
+    second: spritesheet_poker_assets_148
+  - first:
+      213: -2713394864340356600
+    second: spritesheet_poker_assets_149
+  - first:
+      213: -8954827196284629023
+    second: spritesheet_poker_assets_150
+  - first:
+      213: -245030021718590465
+    second: spritesheet_poker_assets_151
+  - first:
+      213: 5029651358781782806
+    second: spritesheet_poker_assets_152
+  - first:
+      213: 7509481056654899969
+    second: spritesheet_poker_assets_153
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_0
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1833
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371f4d77d75fab2c0800000000000000
+      internalID: -4414946565453188749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_1
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1833
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb9196689558232c0800000000000000
+      internalID: -4453350461962380865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_2
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1833
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c716c816371a17180800000000000000
+      internalID: -9119330253518642820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_3
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1833
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e81ed92baf2dad0800000000000000
+      internalID: -2678803183272096156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_4
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 1833
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c424c14b4f72e650800000000000000
+      internalID: 6260706393201059015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_5
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1833
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc2c72dc063c0730800000000000000
+      internalID: 3966604800505425107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_6
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 1833
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e28a08752923dc80800000000000000
+      internalID: -8299244447409208599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_7
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 1833
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8e7345c404734c0800000000000000
+      internalID: -4307903821981947726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_8
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 1833
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 404e3b4435e4c4a90800000000000000
+      internalID: -7328396374096747516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_9
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 1833
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4c7dba8ce551cf80800000000000000
+      internalID: -8088088981352383414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_10
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1833
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99ab86cd6e140280800000000000000
+      internalID: -9078097492040767076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_11
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 1833
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3ddadab54328d00800000000000000
+      internalID: 973398037825967092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_12
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 1833
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34933fb423b2916c0800000000000000
+      internalID: -4172256084759463613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_13
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1833
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 991d5ce15c6c81eb0800000000000000
+      internalID: -4748827257135050343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_14
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1620
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4179fd37721f0dfd0800000000000000
+      internalID: -2319088656345753836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_15
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1620
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801efc63cf3498bc0800000000000000
+      internalID: -3780415661670407928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_16
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1620
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 956a407af98975230800000000000000
+      internalID: 3627535836339545689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_17
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1620
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a9427fb97b98420800000000000000
+      internalID: 2632837337668950598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_18
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 1620
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c6d6c6a1ce432320800000000000000
+      internalID: 2531954009146054336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_19
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1620
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc8e47d3a0fc69080800000000000000
+      internalID: -9180923147460482868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_20
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 1620
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ce19c4a2743c0c80800000000000000
+      internalID: -8355245541683552574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_21
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 1620
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad85e0cf2809ca7b0800000000000000
+      internalID: -5211631776525559590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_22
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 1620
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317f71e00aa5ff1e0800000000000000
+      internalID: -2161909652636829933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_23
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 1620
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ecf6e3d930ba5c20800000000000000
+      internalID: 3196060647987543268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_24
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1620
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d29b5d05db80a70800000000000000
+      internalID: 8793486427321609555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_25
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 1620
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb8b27029cc409a0800000000000000
+      internalID: -6267659853835301916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_26
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 1620
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5087048ed7f36500800000000000000
+      internalID: 388426527953879134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_27
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 1619
+        width: 135
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e18edfe9fa9d760800000000000000
+      internalID: 7483205353252331062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_28
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1407
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db61d3d1fc4a23230800000000000000
+      internalID: 3617134660187657917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_29
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1407
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8750fe6b5351d670800000000000000
+      internalID: 8561716018776397708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_30
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1407
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faa5fe976656b3ce0800000000000000
+      internalID: -1424433366325830993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_31
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1407
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58745c29b7c38e0a0800000000000000
+      internalID: -6852160331603163259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_32
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 1407
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2751f425e7009e920800000000000000
+      internalID: 3019945567675422066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_33
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1407
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a10c2435286c4990800000000000000
+      internalID: -7400425578678189657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_34
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 1407
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e8b29446ef9f5c90800000000000000
+      internalID: -7178843469663520541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_35
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 1407
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5fdb5c268a6abc30800000000000000
+      internalID: 4375927112446238558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_36
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 1407
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 396391fcf34d6e660800000000000000
+      internalID: 7414847207034664595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_37
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 1407
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c01c5c758a19ae10800000000000000
+      internalID: 2209326252821319873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_38
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1407
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72c37201151671ad0800000000000000
+      internalID: -2731607648185664473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_39
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 1407
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c4b6e75833ac2870800000000000000
+      internalID: 8659475645914854599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_40
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 1407
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8097eaae11b4c5dd0800000000000000
+      internalID: -2496037553146267384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_41
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1407
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aeafb37b39fab890800000000000000
+      internalID: -7441361400535994711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_42
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1194
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38297e8ff14f94360800000000000000
+      internalID: 7154517901211832963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_43
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1194
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70c7d1ef5ec3e790800000000000000
+      internalID: -7501925643062886275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_44
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1194
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bafd0ecf9977a6640800000000000000
+      internalID: 5073999433442582443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_45
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1194
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63cf302fd00a3fdc0800000000000000
+      internalID: -3606362894838268874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_46
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 1194
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f31382b05ba196260800000000000000
+      internalID: 7091228453150142783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_47
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1194
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9941243d605c05e0800000000000000
+      internalID: -1942088909347272290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_48
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 1194
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f22258b629de8150800000000000000
+      internalID: 5876873324089451253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_49
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 1194
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a6b4cb6cd31d4ae0800000000000000
+      internalID: -1563571658205907288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_50
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 1194
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca9816b90944fdf0800000000000000
+      internalID: -147412581737784625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_51
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 1194
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e6398bbb29e749d0800000000000000
+      internalID: -2790005070093535517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_52
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1194
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af1f379962dd3e290800000000000000
+      internalID: -7862197366605745670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_53
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 1194
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 533b1594476940760800000000000000
+      internalID: 7423223512003883829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_54
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 1194
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a97da14c8aa3e5d20800000000000000
+      internalID: 3269114876036568986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_55
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1194
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17544b6f705fecb00800000000000000
+      internalID: 850886794172188017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_56
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 981
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aa7fd53c4f67a300800000000000000
+      internalID: 263301476336499368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_57
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 981
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf648c72b7a45ce0800000000000000
+      internalID: -1417323597679792177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_58
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 981
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97407979be69a7130800000000000000
+      internalID: 3565327993621906553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_59
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 981
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4839b8b1cd5feae00800000000000000
+      internalID: 1058053288182387588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_60
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 981
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644c9833b0c88be40800000000000000
+      internalID: 5672437710410335302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_61
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 981
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 139079e725d891700800000000000000
+      internalID: 511595418133924145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_62
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 981
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f0831c359186830800000000000000
+      internalID: 4064526511216529189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_63
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 981
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0196c8f151c4d8e20800000000000000
+      internalID: 3354420951068207376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_64
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 981
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 052b7b361a04190b0800000000000000
+      internalID: -5723722589504294320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_65
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 981
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f657464c9e4e59090800000000000000
+      internalID: -8028259068044610193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_66
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 981
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88048bbe8e49befb0800000000000000
+      internalID: -4617433264830267256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_67
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 981
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9838dac2cfb952ac0800000000000000
+      internalID: -3880523996526181495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_68
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 981
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f3ddf2119666310800000000000000
+      internalID: 1397920256883507001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_69
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 981
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 061ee09e8291b6070800000000000000
+      internalID: 8100596018255421792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_70
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 768
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693225f70393dd290800000000000000
+      internalID: -7864066493861715050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_71
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 768
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dcda422c3cde80c0800000000000000
+      internalID: -4571474420902994728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_72
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 768
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd78a744ebd0fa380800000000000000
+      internalID: -8957926022972799011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_73
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 768
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc008e0765869adb0800000000000000
+      internalID: -4780174809006341939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_74
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 768
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5ee9d8aa01680e10800000000000000
+      internalID: 2164086319361945179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_75
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 768
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4351b2335ae105110800000000000000
+      internalID: 1247530791658526004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_76
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 768
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a64cc33cae205f0800000000000000
+      internalID: -791812460204758418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_77
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 768
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ea111d2ef783fdb0800000000000000
+      internalID: -4759310855452943645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_78
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 768
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6956ff1158f47760800000000000000
+      internalID: 7454856310517291373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_79
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 768
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3f313afbbba3be0800000000000000
+      internalID: -1496677494398127120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_80
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 768
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9d0c46c166762ec0800000000000000
+      internalID: -3592053490470613601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_81
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 768
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292ed687c9c2e6d40800000000000000
+      internalID: 5579446038905610898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_82
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 768
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9cbbde8160749120800000000000000
+      internalID: 2419682464115702940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_83
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 768
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924ee447bfe0e9c40800000000000000
+      internalID: 5520866666353714217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_84
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 555
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5642b42067116920800000000000000
+      internalID: 2981690129995941469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_85
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 555
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87d4024974f30850800000000000000
+      internalID: 6342181501903624079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_86
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 555
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa509496badf64300800000000000000
+      internalID: 236154943131157930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_87
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 555
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a17d24a19a621340800000000000000
+      internalID: 4833042523879207328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_88
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 555
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64af9bcc490f2f5d0800000000000000
+      internalID: -3030095077386356154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_89
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 555
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58977f0cf11baa320800000000000000
+      internalID: 2570061287307835781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_90
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 555
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229fb1717044e74f0800000000000000
+      internalID: -829150484146423518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_91
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 555
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6bbaa0be87cc0520800000000000000
+      internalID: 2669728094787124075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_92
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 555
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 038e95080e3b7eac0800000000000000
+      internalID: -3825891581620525008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_93
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 555
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26cae620f96505300800000000000000
+      internalID: 238786021191232610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_94
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 555
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f0639263de2c840800000000000000
+      internalID: 5243013733088104218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_95
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 555
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c5a2dc4066b9cc10800000000000000
+      internalID: 2074389628102813129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_96
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 555
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c7e7bc7e81aee060800000000000000
+      internalID: 6984697705448073152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_97
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 555
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae600c13f2ea0bad0800000000000000
+      internalID: -2688457459818821910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_98
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 342
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13edd41863ccac3a0800000000000000
+      internalID: -6644273765762081231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_99
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 342
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43430c070f5faa740800000000000000
+      internalID: 5164210335766295604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_100
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 342
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 630955a35789e3680800000000000000
+      internalID: -8773407394813865930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_101
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 342
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2565117d0850b50800000000000000
+      internalID: 6558790093532189374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_102
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 342
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a7b90325cfd02da0800000000000000
+      internalID: -5971527068103886939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_103
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 342
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82f100ce3c622fb0800000000000000
+      internalID: -4674054446492028275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_104
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 342
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1381c70684f0dce40800000000000000
+      internalID: 5678211508714870833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_105
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 342
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 157c36d5090d82300800000000000000
+      internalID: 227661099642898257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_106
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 342
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6008258baf73ea50800000000000000
+      internalID: 6549218657776959596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_107
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 342
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aa2a123aec7bde00800000000000000
+      internalID: 1070586681735391907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_108
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 342
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4723c2340a8334420800000000000000
+      internalID: 2612994469777912436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_109
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 342
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c347bf6958601e830800000000000000
+      internalID: 4098564306717340732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_110
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 342
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de581752733af2c0800000000000000
+      internalID: -4397145519993364776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_111
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 342
+        width: 132
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a7de15bbc48b170800000000000000
+      internalID: 8194383889417730696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_112
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 190
+        width: 134
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f373aec7357e2ac0800000000000000
+      internalID: -3878033346568948752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_113
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 190
+        width: 134
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0da9d75479f6ca20800000000000000
+      internalID: 3082425273067089162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_114
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 190
+        width: 133
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d1472a4e312e020800000000000000
+      internalID: 2369478226649292102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_115
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 190
+        width: 133
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6a95d374e1083790800000000000000
+      internalID: -7550282694579086739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_116
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 190
+        width: 133
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef6057a3daa31c8f0800000000000000
+      internalID: -522071566113765634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_117
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 190
+        width: 133
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca575e325ac26fa60800000000000000
+      internalID: 7707396900074649004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_118
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 190
+        width: 133
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3577ad06f84db24b0800000000000000
+      internalID: -5464040010613622957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_119
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 190
+        width: 133
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef65fbdc095fe5f0800000000000000
+      internalID: -725263103218585630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_120
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 190
+        width: 133
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bda634190b06f69f0800000000000000
+      internalID: -473053124382987557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_121
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 190
+        width: 133
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d473d7feb6ef1e0800000000000000
+      internalID: -2162172094749127386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_122
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 190
+        width: 133
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18789329eb421c290800000000000000
+      internalID: -7871970272751286399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_123
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 190
+        width: 133
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b98c482c990fe7e0800000000000000
+      internalID: -1734156765218698825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_124
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 190
+        width: 133
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6772b9134d0421080800000000000000
+      internalID: -9218234207164487818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_125
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 190
+        width: 133
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36b5344e1ff95430800000000000000
+      internalID: 3772326668357973565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_126
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 90
+        width: 141
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3184316ec059b5120800000000000000
+      internalID: 2403678708764461075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_127
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 90
+        width: 141
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f8bcaabe6bac6040800000000000000
+      internalID: 4642273807978772721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_128
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 90
+        width: 141
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0a24b1015534a00800000000000000
+      internalID: 739528291484082355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_129
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 90
+        width: 141
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29eafbe0b6163850800000000000000
+      internalID: 6356292873209178410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_130
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 90
+        width: 141
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c703eb45875a8650800000000000000
+      internalID: 6235892864063309768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_131
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 90
+        width: 141
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af96753b2d24ecf0800000000000000
+      internalID: -224004417857871968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_132
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 90
+        width: 141
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74f065e732cf92080800000000000000
+      internalID: -9211554333436014777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_133
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 90
+        width: 141
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19dcacbb5d0b2fe70800000000000000
+      internalID: 9147568225168051601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_134
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 90
+        width: 141
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b081332fa94e180800000000000000
+      internalID: -9086967783096841377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_135
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 90
+        width: 141
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d4f381a348671f0800000000000000
+      internalID: -1047504478267290274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_136
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 90
+        width: 141
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81dd8543f0567f8a0800000000000000
+      internalID: -6271432840112972520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_137
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 90
+        width: 141
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a91865ee2f0aed20800000000000000
+      internalID: 3308473570348767649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_138
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 90
+        width: 141
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3914f697aae06add0800000000000000
+      internalID: -2475274819848945261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_139
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 90
+        width: 141
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de90b91775ff655a0800000000000000
+      internalID: -6532753458421102099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_140
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 13
+        width: 131
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a3b5b7703e7d32d0800000000000000
+      internalID: -3297340605533408347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_141
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 13
+        width: 131
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 785ba4415bd697f10800000000000000
+      internalID: 2267964511854704007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_142
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 13
+        width: 131
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316d1d1f03a625f80800000000000000
+      internalID: -8119310419747547629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_143
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 13
+        width: 131
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a48c014acb9be400800000000000000
+      internalID: 354548288655754405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_144
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 13
+        width: 131
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b829b577e5daee60800000000000000
+      internalID: 7992435678811596981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_145
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 13
+        width: 131
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94210b3267c3fbf0800000000000000
+      internalID: -291670326138297190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_146
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 13
+        width: 131
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde57a82b9cee3700800000000000000
+      internalID: 522114757967699677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_147
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 13
+        width: 131
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a6c476b6bf488dc0800000000000000
+      internalID: -3636569052937927001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_148
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 13
+        width: 131
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b2713c36d337a70800000000000000
+      internalID: 8823463593633065745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_149
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 13
+        width: 131
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802bf9f3fb5185ad0800000000000000
+      internalID: -2713394864340356600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_150
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 13
+        width: 131
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef82741c101ab380800000000000000
+      internalID: -8954827196284629023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_151
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 13
+        width: 131
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb38245e7a799cf0800000000000000
+      internalID: -245030021718590465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_152
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 13
+        width: 131
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61bbf383349ecc540800000000000000
+      internalID: 5029651358781782806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_poker_assets_153
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 13
+        width: 131
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10bb07deb39073860800000000000000
+      internalID: 7509481056654899969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      spritesheet_poker_assets_0: -4414946565453188749
+      spritesheet_poker_assets_1: -4453350461962380865
+      spritesheet_poker_assets_10: -9078097492040767076
+      spritesheet_poker_assets_100: -8773407394813865930
+      spritesheet_poker_assets_101: 6558790093532189374
+      spritesheet_poker_assets_102: -5971527068103886939
+      spritesheet_poker_assets_103: -4674054446492028275
+      spritesheet_poker_assets_104: 5678211508714870833
+      spritesheet_poker_assets_105: 227661099642898257
+      spritesheet_poker_assets_106: 6549218657776959596
+      spritesheet_poker_assets_107: 1070586681735391907
+      spritesheet_poker_assets_108: 2612994469777912436
+      spritesheet_poker_assets_109: 4098564306717340732
+      spritesheet_poker_assets_11: 973398037825967092
+      spritesheet_poker_assets_110: -4397145519993364776
+      spritesheet_poker_assets_111: 8194383889417730696
+      spritesheet_poker_assets_112: -3878033346568948752
+      spritesheet_poker_assets_113: 3082425273067089162
+      spritesheet_poker_assets_114: 2369478226649292102
+      spritesheet_poker_assets_115: -7550282694579086739
+      spritesheet_poker_assets_116: -522071566113765634
+      spritesheet_poker_assets_117: 7707396900074649004
+      spritesheet_poker_assets_118: -5464040010613622957
+      spritesheet_poker_assets_119: -725263103218585630
+      spritesheet_poker_assets_12: -4172256084759463613
+      spritesheet_poker_assets_120: -473053124382987557
+      spritesheet_poker_assets_121: -2162172094749127386
+      spritesheet_poker_assets_122: -7871970272751286399
+      spritesheet_poker_assets_123: -1734156765218698825
+      spritesheet_poker_assets_124: -9218234207164487818
+      spritesheet_poker_assets_125: 3772326668357973565
+      spritesheet_poker_assets_126: 2403678708764461075
+      spritesheet_poker_assets_127: 4642273807978772721
+      spritesheet_poker_assets_128: 739528291484082355
+      spritesheet_poker_assets_129: 6356292873209178410
+      spritesheet_poker_assets_13: -4748827257135050343
+      spritesheet_poker_assets_130: 6235892864063309768
+      spritesheet_poker_assets_131: -224004417857871968
+      spritesheet_poker_assets_132: -9211554333436014777
+      spritesheet_poker_assets_133: 9147568225168051601
+      spritesheet_poker_assets_134: -9086967783096841377
+      spritesheet_poker_assets_135: -1047504478267290274
+      spritesheet_poker_assets_136: -6271432840112972520
+      spritesheet_poker_assets_137: 3308473570348767649
+      spritesheet_poker_assets_138: -2475274819848945261
+      spritesheet_poker_assets_139: -6532753458421102099
+      spritesheet_poker_assets_14: -2319088656345753836
+      spritesheet_poker_assets_140: -3297340605533408347
+      spritesheet_poker_assets_141: 2267964511854704007
+      spritesheet_poker_assets_142: -8119310419747547629
+      spritesheet_poker_assets_143: 354548288655754405
+      spritesheet_poker_assets_144: 7992435678811596981
+      spritesheet_poker_assets_145: -291670326138297190
+      spritesheet_poker_assets_146: 522114757967699677
+      spritesheet_poker_assets_147: -3636569052937927001
+      spritesheet_poker_assets_148: 8823463593633065745
+      spritesheet_poker_assets_149: -2713394864340356600
+      spritesheet_poker_assets_15: -3780415661670407928
+      spritesheet_poker_assets_150: -8954827196284629023
+      spritesheet_poker_assets_151: -245030021718590465
+      spritesheet_poker_assets_152: 5029651358781782806
+      spritesheet_poker_assets_153: 7509481056654899969
+      spritesheet_poker_assets_16: 3627535836339545689
+      spritesheet_poker_assets_17: 2632837337668950598
+      spritesheet_poker_assets_18: 2531954009146054336
+      spritesheet_poker_assets_19: -9180923147460482868
+      spritesheet_poker_assets_2: -9119330253518642820
+      spritesheet_poker_assets_20: -8355245541683552574
+      spritesheet_poker_assets_21: -5211631776525559590
+      spritesheet_poker_assets_22: -2161909652636829933
+      spritesheet_poker_assets_23: 3196060647987543268
+      spritesheet_poker_assets_24: 8793486427321609555
+      spritesheet_poker_assets_25: -6267659853835301916
+      spritesheet_poker_assets_26: 388426527953879134
+      spritesheet_poker_assets_27: 7483205353252331062
+      spritesheet_poker_assets_28: 3617134660187657917
+      spritesheet_poker_assets_29: 8561716018776397708
+      spritesheet_poker_assets_3: -2678803183272096156
+      spritesheet_poker_assets_30: -1424433366325830993
+      spritesheet_poker_assets_31: -6852160331603163259
+      spritesheet_poker_assets_32: 3019945567675422066
+      spritesheet_poker_assets_33: -7400425578678189657
+      spritesheet_poker_assets_34: -7178843469663520541
+      spritesheet_poker_assets_35: 4375927112446238558
+      spritesheet_poker_assets_36: 7414847207034664595
+      spritesheet_poker_assets_37: 2209326252821319873
+      spritesheet_poker_assets_38: -2731607648185664473
+      spritesheet_poker_assets_39: 8659475645914854599
+      spritesheet_poker_assets_4: 6260706393201059015
+      spritesheet_poker_assets_40: -2496037553146267384
+      spritesheet_poker_assets_41: -7441361400535994711
+      spritesheet_poker_assets_42: 7154517901211832963
+      spritesheet_poker_assets_43: -7501925643062886275
+      spritesheet_poker_assets_44: 5073999433442582443
+      spritesheet_poker_assets_45: -3606362894838268874
+      spritesheet_poker_assets_46: 7091228453150142783
+      spritesheet_poker_assets_47: -1942088909347272290
+      spritesheet_poker_assets_48: 5876873324089451253
+      spritesheet_poker_assets_49: -1563571658205907288
+      spritesheet_poker_assets_5: 3966604800505425107
+      spritesheet_poker_assets_50: -147412581737784625
+      spritesheet_poker_assets_51: -2790005070093535517
+      spritesheet_poker_assets_52: -7862197366605745670
+      spritesheet_poker_assets_53: 7423223512003883829
+      spritesheet_poker_assets_54: 3269114876036568986
+      spritesheet_poker_assets_55: 850886794172188017
+      spritesheet_poker_assets_56: 263301476336499368
+      spritesheet_poker_assets_57: -1417323597679792177
+      spritesheet_poker_assets_58: 3565327993621906553
+      spritesheet_poker_assets_59: 1058053288182387588
+      spritesheet_poker_assets_6: -8299244447409208599
+      spritesheet_poker_assets_60: 5672437710410335302
+      spritesheet_poker_assets_61: 511595418133924145
+      spritesheet_poker_assets_62: 4064526511216529189
+      spritesheet_poker_assets_63: 3354420951068207376
+      spritesheet_poker_assets_64: -5723722589504294320
+      spritesheet_poker_assets_65: -8028259068044610193
+      spritesheet_poker_assets_66: -4617433264830267256
+      spritesheet_poker_assets_67: -3880523996526181495
+      spritesheet_poker_assets_68: 1397920256883507001
+      spritesheet_poker_assets_69: 8100596018255421792
+      spritesheet_poker_assets_7: -4307903821981947726
+      spritesheet_poker_assets_70: -7864066493861715050
+      spritesheet_poker_assets_71: -4571474420902994728
+      spritesheet_poker_assets_72: -8957926022972799011
+      spritesheet_poker_assets_73: -4780174809006341939
+      spritesheet_poker_assets_74: 2164086319361945179
+      spritesheet_poker_assets_75: 1247530791658526004
+      spritesheet_poker_assets_76: -791812460204758418
+      spritesheet_poker_assets_77: -4759310855452943645
+      spritesheet_poker_assets_78: 7454856310517291373
+      spritesheet_poker_assets_79: -1496677494398127120
+      spritesheet_poker_assets_8: -7328396374096747516
+      spritesheet_poker_assets_80: -3592053490470613601
+      spritesheet_poker_assets_81: 5579446038905610898
+      spritesheet_poker_assets_82: 2419682464115702940
+      spritesheet_poker_assets_83: 5520866666353714217
+      spritesheet_poker_assets_84: 2981690129995941469
+      spritesheet_poker_assets_85: 6342181501903624079
+      spritesheet_poker_assets_86: 236154943131157930
+      spritesheet_poker_assets_87: 4833042523879207328
+      spritesheet_poker_assets_88: -3030095077386356154
+      spritesheet_poker_assets_89: 2570061287307835781
+      spritesheet_poker_assets_9: -8088088981352383414
+      spritesheet_poker_assets_90: -829150484146423518
+      spritesheet_poker_assets_91: 2669728094787124075
+      spritesheet_poker_assets_92: -3825891581620525008
+      spritesheet_poker_assets_93: 238786021191232610
+      spritesheet_poker_assets_94: 5243013733088104218
+      spritesheet_poker_assets_95: 2074389628102813129
+      spritesheet_poker_assets_96: 6984697705448073152
+      spritesheet_poker_assets_97: -2688457459818821910
+      spritesheet_poker_assets_98: -6644273765762081231
+      spritesheet_poker_assets_99: 5164210335766295604
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
