@@ -35,16 +35,31 @@ public static class BlackjackDemoTools
         r = new BlackjackRound(1); r.SetTestShoe(new Card(10),new Card(10),new Card(8),new Card(8)); r.Deal(100); r.Stand(); r.DealerStep();
         check(r.Bank == 1000,"ordinary push");
         r = new BlackjackRound(1); r.SetTestShoe(new Card(5),new Card(10),new Card(6),new Card(7)); r.Deal(1000); check(!r.CanDouble,"insufficient bank for double");
+        check(!BlackjackDealerAI.ShouldHit(DealerDifficulty.Easy, new[] {new Card(10),new Card(5)}, 20), "easy stands on 15");
+        check(BlackjackDealerAI.ShouldHit(DealerDifficulty.Easy, new[] {new Card(10),new Card(4)}, 20), "easy hits 14");
+        check(BlackjackDealerAI.ShouldHit(DealerDifficulty.Medium, new[] {new Card(10),new Card(6)}, 20), "medium hits 16");
+        check(!BlackjackDealerAI.ShouldHit(DealerDifficulty.Hard, new[] {new Card(10),new Card(4)}, 13), "hard protects a winning hand");
+        check(BlackjackDealerAI.ShouldHit(DealerDifficulty.Hard, new[] {new Card(10),new Card(9)}, 20), "hard draws when standing loses");
+        check(!BlackjackDealerAI.ShouldHit(DealerDifficulty.Hard, new[] {new Card(10),new Card(10)}, 20), "hard keeps a strong tie");
+        check(BlackjackDealerAI.ShouldHit(DealerDifficulty.Hard, new[] {new Card(1),new Card(6)}, 20), "hard evaluates soft hands");
+        r = new BlackjackRound(1); r.SetDifficulty(DealerDifficulty.Easy);
+        r.SetTestShoe(new Card(10),new Card(10),new Card(8),new Card(5)); r.Deal(100);
+        check(!r.SetDifficulty(DealerDifficulty.Hard) && r.Difficulty == DealerDifficulty.Easy,"difficulty locked during player turn");
+        r.Stand(); check(!r.SetDifficulty(DealerDifficulty.Hard),"difficulty locked during dealer turn");
+        r.DealerStep(); check(r.State == BlackjackRound.Phase.Complete && r.Bank == 1100 && r.Dealer.Count == 2,"easy rule integrated");
+        check(r.SetDifficulty(DealerDifficulty.Hard),"difficulty editable after settlement");
+        check(!r.SetDifficulty((DealerDifficulty)99),"invalid difficulty rejected");
+        foreach (DealerDifficulty difficulty in Enum.GetValues(typeof(DealerDifficulty)))
         for (int i=0; i<500; i++)
         {
-            r = new BlackjackRound(i); r.Deal(50);
+            r = new BlackjackRound(i); r.SetDifficulty(difficulty); r.Deal(50);
             while (r.State == BlackjackRound.Phase.Player && BlackjackRound.Total(r.Player) < 17) r.Hit();
             r.Stand(); int steps = 0;
             while (r.State == BlackjackRound.Phase.Dealer && steps++ < 30) r.DealerStep();
-            check(r.State == BlackjackRound.Phase.Complete && r.Bank >= 0,"simulated round " + i);
+            check(r.State == BlackjackRound.Phase.Complete && r.Bank >= 0,"simulated " + difficulty + " round " + i);
         }
         Directory.CreateDirectory("Logs");
-        File.WriteAllText("Logs/BlackjackRuleChecks.txt", "PASS: " + checks + " checks, including 500 simulated rounds. " + DateTime.Now);
+        File.WriteAllText("Logs/BlackjackRuleChecks.txt", "PASS: " + checks + " checks, including 1,500 simulated rounds across three difficulties. " + DateTime.Now);
         Debug.Log("Blackjack: " + checks + " rule checks passed.");
     }
 

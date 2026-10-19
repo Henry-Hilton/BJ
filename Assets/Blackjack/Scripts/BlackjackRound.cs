@@ -20,6 +20,13 @@ namespace Blackjack
         public int Bet { get; private set; }
         public int Wins { get; private set; }
         public int Hands { get; private set; }
+        public DealerDifficulty Difficulty { get; private set; } = DealerDifficulty.Medium;
+        public bool CanChangeDifficulty => State == Phase.Betting || State == Phase.Complete;
+        public bool SetDifficulty(DealerDifficulty difficulty)
+        {
+            if (!CanChangeDifficulty || !Enum.IsDefined(typeof(DealerDifficulty), difficulty)) return false;
+            Difficulty = difficulty; return true;
+        }
         public string Message { get; private set; } = "Choose your chips, then deal.";
         public readonly List<Card> Player = new List<Card>();
         public readonly List<Card> Dealer = new List<Card>();
@@ -57,7 +64,7 @@ namespace Blackjack
             if (Total(Player) > 21) Finish("Bust! Dealer wins.", 0);
             else if (Total(Player) == 21) Stand();
         }
-        public void Stand() { if (State == Phase.Player) { State = Phase.Dealer; Message = "Dealer plays. Stands on all 17s."; } }
+        public void Stand() { if (State == Phase.Player) { State = Phase.Dealer; Message = "Dealer plays. " + BlackjackDealerAI.Rule(Difficulty); } }
         public void Double()
         {
             if (!CanDouble) return;
@@ -66,7 +73,11 @@ namespace Blackjack
         public void DealerStep()
         {
             if (State != Phase.Dealer) return;
-            if (Total(Dealer) < 17) { Dealer.Add(Draw()); if (Total(Dealer) < 17) return; }
+            if (BlackjackDealerAI.ShouldHit(Difficulty, Dealer, Total(Player)))
+            {
+                Dealer.Add(Draw());
+                if (BlackjackDealerAI.ShouldHit(Difficulty, Dealer, Total(Player))) return;
+            }
             int player = Total(Player), dealer = Total(Dealer);
             if (dealer > 21 || player > dealer) { Wins++; Finish(dealer > 21 ? "Dealer busts. You win!" : "You win!", Bet * 2); }
             else if (player == dealer) Finish("Push. Your bet is returned.", Bet);
