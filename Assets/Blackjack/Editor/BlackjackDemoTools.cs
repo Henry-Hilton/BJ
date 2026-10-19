@@ -12,6 +12,16 @@ public static class BlackjackDemoTools
     {
         int checks = 0;
         Action<bool,string> check = (ok, name) => { if (!ok) throw new Exception("Blackjack check failed: " + name); checks++; };
+        var profile = new BlackjackPlayerProfile { displayName = "  Jane Doe  ", colorA = "#123456", colorB = "ABCDEF", avatarStyle = AvatarStyle.Gradient };
+        profile.Normalize(); var profileCopy = profile.Copy();
+        check(profile.displayName == "Jane Doe" && profile.Initials == "JD", "profile name and initials");
+        check(profile.colorA == "123456" && profile.colorB == "ABCDEF", "profile hex normalization");
+        check(profileCopy.profileId == profile.profileId && profileCopy.avatarStyle == AvatarStyle.Gradient && profileCopy.colorB == profile.colorB, "profile JSON roundtrip retains identity and avatar");
+        profileCopy.colorA = "FFFFFF"; check(profile.colorA == "123456", "profile copy is isolated");
+        check(!BlackjackPlayerProfile.TryColor("#12", out _) && !BlackjackPlayerProfile.TryColor("ZZZZZZ", out _), "invalid avatar colors rejected");
+        profileCopy.profileId = "invalid"; profileCopy.colorA = "bad"; profileCopy.avatarStyle = (AvatarStyle)99; profileCopy.Normalize();
+        check(Guid.TryParseExact(profileCopy.profileId, "N", out _) && profileCopy.avatarStyle == AvatarStyle.Solid && profileCopy.colorA.Length == 6, "profile invalid data repaired");
+        profileCopy.displayName = "<b>name</b>"; profileCopy.Normalize(); check(profileCopy.displayName == "", "profile markup rejected");
         check(BlackjackRound.Total(new[] {new Card(1),new Card(1),new Card(9)}) == 21,"multiple aces");
         check(BlackjackRound.Total(new[] {new Card(1),new Card(9),new Card(5)}) == 15,"soft to hard");
         var r = new BlackjackRound(1);

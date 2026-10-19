@@ -52,7 +52,9 @@ namespace Blackjack
             Panel(page, "Bottom rule", 56, 713, 1168, 1, new Color(.84f,.69f,.43f,.24f));
             Text(page, "B / J", 58, 38, 100, 36, 25, gold);
             Text(page, "THE PRACTICE COLLECTION", 180, 44, 420, 24, 12, muted, 3);
-            Text(page, "EST. 21   /   PLAY CHIPS ONLY", 846, 44, 378, 24, 12, muted, 2, TextAlignmentOptions.Right);
+            Text(page, "PLAY CHIPS ONLY", 600, 44, 340, 24, 12, muted, 2, TextAlignmentOptions.Right);
+            BuildMenuAvatar();
+            Button(page, "Edit profile", 1040, 36, 184, 36, false, ShowProfileEditor);
             for (int i = 0; i < 12; i++)
             {
                 var line = Panel(page, "Architectural line", 760 + i * 43, 125, 1, 530, new Color(.84f,.69f,.43f,.035f));
@@ -140,6 +142,7 @@ namespace Blackjack
             canvasGroup.alpha = 1; canvasGroup.blocksRaycasts = true;
             rules.gameObject.SetActive(false); page.gameObject.SetActive(true); playButton.Select();
             RefreshDifficulty();
+            RefreshMenuAvatar();
             playLabel.text = hasPlayed ? "RESUME YOUR HAND   >" : "TAKE A SEAT   >";
             if (entrance != null) StopCoroutine(entrance);
             entrance = StartCoroutine(Reveal());

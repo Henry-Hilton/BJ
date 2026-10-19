@@ -17,8 +17,12 @@ namespace Blackjack
         TextMeshProUGUI bankText, betText, statusText, dealerText, playerText, statsText;
         TextMeshProUGUI dealerHint, playerHint;
         TextMeshProUGUI dealerRule;
-        public string PlayerName { get; private set; } = "Player";
-        public void SetPlayerName(string value) { PlayerName = value; Refresh(); }
+        public BlackjackPlayerProfile Profile { get; private set; } = new BlackjackPlayerProfile();
+        public string PlayerName => string.IsNullOrEmpty(Profile.displayName) ? "Player" : Profile.displayName;
+        BlackjackAvatarGraphic playerAvatar;
+        TextMeshProUGUI playerInitials;
+        public void SetPlayerName(string value) { Profile.displayName = value; Refresh(); }
+        public void ApplyProfile(BlackjackPlayerProfile value) { Profile = value.Copy(); Profile.Normalize(); Refresh(); }
         public DealerDifficulty Difficulty => round.Difficulty;
         public bool CanChangeDifficulty => !TutorialActive && round.CanChangeDifficulty;
         public bool SetDifficulty(DealerDifficulty difficulty)
@@ -51,6 +55,7 @@ namespace Blackjack
         void Start()
         {
             font = Resources.Load<TMP_FontAsset>("Fonts & Materials/LiberationSans SDF");
+            Profile = BlackjackPlayerProfile.Load();
             round.SetDifficulty((DealerDifficulty)PlayerPrefs.GetInt("Blackjack.DealerDifficulty", (int)DealerDifficulty.Medium));
             artwork = Resources.Load<BlackjackArtwork>("BlackjackArtwork");
             if (artwork == null || artwork.cards.Length != 52 || artwork.chips.Length != 4 || artwork.cardBack == null)
@@ -103,7 +108,11 @@ namespace Blackjack
             Label(root, "BLACKJACK PAYS 3:2", 440, 328, 400, 26, 13, gold);
             Box(root, "Left divider", 100, 342, 310, 1, new Color(.84f,.69f,.43f,.2f));
             Box(root, "Right divider", 870, 342, 310, 1, new Color(.84f,.69f,.43f,.2f));
-            playerText = Label(root, "", 88, 364, 500, 28, 18, cream, TextAnchor.MiddleLeft);
+            var avatarRect = Box(root, "Player avatar", 88, 356, 44, 44, Color.clear, false);
+            playerAvatar = avatarRect.gameObject.AddComponent<BlackjackAvatarGraphic>(); playerAvatar.raycastTarget = false;
+            playerInitials = Label(avatarRect, "", 0, 0, 44, 44, 17, cream);
+            playerText = Label(root, "", 146, 364, 590, 28, 18, cream, TextAnchor.MiddleLeft);
+            playerText.enableAutoSizing = true; playerText.fontSizeMin = 12; playerText.fontSizeMax = 18;
             Label(root, "ACE = 1 OR 11", 890, 367, 300, 22, 11, muted, TextAnchor.MiddleRight);
             playerCards = Box(root, "Player hand", 0, 405, 1280, 132, Color.clear);
             playerHint = Label(root, "Choose your wager below, then deal.", 400, 452, 480, 32, 17, muted);
@@ -169,6 +178,7 @@ namespace Blackjack
             statusText.text = betting && round.Bank < 10 ? round.Message + "  Reset bank to play again." : round.Message;
             dealerText.text = "DEALER" + (round.Dealer.Count == 0 ? "" : playing ? "   /   " + round.Dealer[0].Value + " + ?" : "   /   " + BlackjackRound.Total(round.Dealer));
             playerText.richText = false;
+            playerAvatar.Apply(Profile); playerInitials.text = Profile.Initials; playerInitials.color = BlackjackAvatarGraphic.InitialColor(Profile);
             playerText.text = PlayerName + " / YOUR HAND" + (round.Player.Count == 0 ? "" : "   /   " + BlackjackRound.Total(round.Player));
             deal.interactable = betting && wager >= 10 && wager <= round.Bank;
             deal.GetComponentInChildren<TextMeshProUGUI>().text = round.Hands == 0 ? "DEAL  [SPACE]" : "DEAL AGAIN";
