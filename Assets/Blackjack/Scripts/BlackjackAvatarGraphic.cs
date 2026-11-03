@@ -4,20 +4,28 @@ namespace Blackjack
 {
     // Rounded vector avatar with diagonal vertex-color interpolation, no image files.
     [RequireComponent(typeof(CanvasRenderer))]
+    /// <summary>Renders profile avatars as rounded UI geometry without texture assets.</summary>
     public sealed class BlackjackAvatarGraphic : UnityEngine.UI.MaskableGraphic
     {
         Color first, second;
         bool gradient;
+        /// <summary>Reads avatar colors and mode and schedules a mesh redraw.</summary>
+        /// <param name="profile">Profile containing the avatar style and RGB endpoints. Changing these affects visuals and text contrast only.</param>
         public void Apply(BlackjackPlayerProfile profile)
         {
             first = profile.ColorA; second = profile.ColorB; gradient = profile.avatarStyle == AvatarStyle.Gradient;
             SetVerticesDirty();
         }
+        /// <summary>Samples the solid color or the diagonal gradient at a vertex.</summary>
+        /// <param name="point">Vertex position in local UI coordinates; its normalized position sets the gradient mix.</param>
+        /// <param name="rect">Bounds of the avatar in the same coordinate space as point. Different bounds change gradient normalization.</param>
         Color Sample(Vector2 point, Rect rect)
         {
             float t = ((point.x - rect.xMin) / rect.width + (rect.yMax - point.y) / rect.height) * .5f;
             return gradient ? Color.Lerp(first, second, t) : first;
         }
+        /// <summary>Builds a rounded avatar mesh with a transparent outer fringe. Changing radius affects corner rounding; more segments smooth the outline at a geometry cost.</summary>
+        /// <param name="mesh">Unity's vertex and triangle buffer for this UI element. Generated geometry changes appearance, not game state.</param>
         protected override void OnPopulateMesh(UnityEngine.UI.VertexHelper mesh)
         {
             mesh.Clear(); Rect r = GetPixelAdjustedRect();
@@ -44,6 +52,8 @@ namespace Blackjack
                 mesh.AddTriangle(0,a,b); mesh.AddTriangle(a,a+1,b+1); mesh.AddTriangle(a,b+1,b);
             }
         }
+        /// <summary>Chooses light or dark initials from the background luminance. Raising the threshold makes light text appear on more backgrounds.</summary>
+        /// <param name="profile">Profile containing the avatar style and RGB endpoints. Changing these affects visuals and text contrast only.</param>
         public static Color InitialColor(BlackjackPlayerProfile profile)
         {
             Color middle = profile.avatarStyle == AvatarStyle.Gradient ? Color.Lerp(profile.ColorA, profile.ColorB, .5f) : profile.ColorA;

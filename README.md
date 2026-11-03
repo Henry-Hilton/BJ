@@ -28,5 +28,6 @@ The in-game **How to Play** guide explains scoring, payouts, and the three deale
 - **Blackjack → Run Rule Checks** runs deterministic checks and 1,500 simulated hands in the Unity Editor.
 - **Blackjack → Build Windows Demo** creates a Windows build at `Builds/Blackjack/Blackjack.exe`.
 - See [BLACKJACK_DEMO.md](BLACKJACK_DEMO.md) for detailed rules, profile storage, and implementation notes.
+- See [CODE_DOCUMENTATION.md](CODE_DOCUMENTATION.md) for the source map and what happens when you change game, UI, animation, or profile values.
 
 WLAN multiplayer is planned. Player profiles are saved locally, and the current game runs offline.

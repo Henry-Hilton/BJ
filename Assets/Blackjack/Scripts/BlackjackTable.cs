@@ -8,6 +8,7 @@ using TMPro;
 
 namespace Blackjack
 {
+    /// <summary>Builds the table and connects user input, rules, audio and card presentation.</summary>
     public sealed partial class BlackjackTable : MonoBehaviour
     {
         BlackjackRound round = new BlackjackRound();
@@ -21,10 +22,16 @@ namespace Blackjack
         public string PlayerName => string.IsNullOrEmpty(Profile.displayName) ? "Player" : Profile.displayName;
         BlackjackAvatarGraphic playerAvatar;
         TextMeshProUGUI playerInitials;
+        /// <summary>Sets the displayed name on the current profile and refreshes the table without saving preferences.</summary>
+        /// <param name="value">Display name to use for this session; the normal form validates and saves separately.</param>
         public void SetPlayerName(string value) { Profile.displayName = value; Refresh(); }
+        /// <summary>Copies and normalizes the supplied profile before refreshing the table. It does not save to disk.</summary>
+        /// <param name="value">Source profile to copy. Different data changes identity and avatar display without altering the hand.</param>
         public void ApplyProfile(BlackjackPlayerProfile value) { Profile = value.Copy(); Profile.Normalize(); Refresh(); }
         public DealerDifficulty Difficulty => round.Difficulty;
         public bool CanChangeDifficulty => !TutorialActive && round.CanChangeDifficulty;
+        /// <summary>Applies and saves an allowed difficulty, then refreshes the UI. Returns false during tutorial or an active hand.</summary>
+        /// <param name="difficulty">Dealer policy enum. A different mode changes drawing strategy; enum numbers also back the saved preference and menu order.</param>
         public bool SetDifficulty(DealerDifficulty difficulty)
         {
             if (TutorialActive || !round.SetDifficulty(difficulty)) return false;
@@ -45,13 +52,17 @@ namespace Blackjack
         AudioClip click;
         BlackjackMainMenu menu;
         public bool MenuOpen => menu != null && menu.IsOpen;
+        /// <summary>Shows or hides the table canvas without replacing the game state.</summary>
+        /// <param name="show">True activates the table canvas; false hides it. The round is retained either way.</param>
         public void ShowTable(bool show) { root.gameObject.SetActive(show); }
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+        /// <summary>Creates a runtime table when the loaded scene has no active table.</summary>
         static void Bootstrap()
         {
             if (FindFirstObjectByType<BlackjackTable>() == null) new GameObject("Blackjack Table").AddComponent<BlackjackTable>();
         }
+        /// <summary>Loads fonts, profile, preferences and artwork; validates art and builds the table and menu.</summary>
         void Start()
         {
             font = Resources.Load<TMP_FontAsset>("Fonts & Materials/LiberationSans SDF");
@@ -67,6 +78,7 @@ namespace Blackjack
             menu.Initialize(this, artwork);
             if (System.Array.IndexOf(System.Environment.GetCommandLineArgs(), "--blackjack-smoke") >= 0) StartCoroutine(SmokeCheck());
         }
+        /// <summary>Routes keyboard actions. The open menu intercepts table shortcuts, and Escape closes or opens the appropriate view.</summary>
         void Update()
         {
             var keyboard = Keyboard.current;
@@ -78,6 +90,7 @@ namespace Blackjack
             else if (keyboard.dKey.wasPressedThisFrame) Act("double");
             else if (keyboard.spaceKey.wasPressedThisFrame) { if (TutorialActive && tutorialNext.interactable) AdvanceTutorial(); else Act("deal"); }
         }
+        /// <summary>Creates the table canvas, status labels, chips, action buttons and tutorial UI.</summary>
         void Build()
         {
             var canvasObject = new GameObject("Blackjack Canvas", typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
@@ -144,6 +157,8 @@ namespace Blackjack
                 events.GetComponent<InputSystemUIInputModule>().AssignDefaultActions();
             }
         }
+        /// <summary>Dispatches a table command, respects tutorial restrictions, refreshes the UI and starts dealer timing if needed.</summary>
+        /// <param name="action">Requested command: deal, hit, stand or double. The tutorial gates these commands according to its current step.</param>
         void Act(string action)
         {
             if (TutorialActive && !TutorialAllows(action)) return;
@@ -155,6 +170,7 @@ namespace Blackjack
             Refresh();
             if (round.State == BlackjackRound.Phase.Dealer && dealerRoutine == null) dealerRoutine = StartCoroutine(DealerTurn());
         }
+        /// <summary>Waits between dealer steps and waits while the menu is open. Changing the delay changes pacing only.</summary>
         IEnumerator DealerTurn()
         {
             while (round.State == BlackjackRound.Phase.Dealer)
@@ -165,7 +181,9 @@ namespace Blackjack
             }
             dealerRoutine = null;
         }
+        /// <summary>Creates a fresh round outside active hands, retaining difficulty but resetting bank, stats, shoe and selected wager.</summary>
         void ResetBank() { if (!round.CanChangeDifficulty) return; var difficulty = round.Difficulty; round = new BlackjackRound(); round.SetDifficulty(difficulty); wager = 50; Refresh(); }
+        /// <summary>Updates the display and control availability from the rules model. Clears stale card views when the hand changes.</summary>
         void Refresh()
         {
             bool betting = round.State == BlackjackRound.Phase.Betting || round.State == BlackjackRound.Phase.Complete;
@@ -198,6 +216,10 @@ namespace Blackjack
             DrawHand(dealerCards, round.Dealer, playing); DrawHand(playerCards, round.Player, false);
             RefreshTutorial();
         }
+        /// <summary>Lays out the cards and reuses existing card views. Hiding a card changes its sprite, not the stored rank.</summary>
+        /// <param name="parent">UI container and coordinate origin. Changing it can move the element, change draw order or affect input.</param>
+        /// <param name="cards">Cards to render in hand order. Changing the list changes the displayed cards and spacing.</param>
+        /// <param name="hidden">True shows the card back at index 1; false shows all faces.</param>
         void DrawHand(RectTransform parent, System.Collections.Generic.List<Card> cards, bool hidden)
         {
             if (cards.Count == 0) return;
@@ -221,6 +243,16 @@ namespace Blackjack
                 motion.Set(new Vector2(x, 0), sprite);
             }
         }
+        /// <summary>Creates a positioned rectangular UI object with an optional background.</summary>
+        /// <param name="parent">UI container and coordinate origin. Changing it can move the element, change draw order or affect input.</param>
+        /// <param name="name">Hierarchy object name. Changing it primarily affects debugging and name-based lookups.</param>
+        /// <param name="x">Horizontal offset in reference UI units. Larger values move right.</param>
+        /// <param name="y">Downward offset in reference UI units. Larger values move down.</param>
+        /// <param name="w">Width in reference UI units. Smaller widths can crop content or wrap labels.</param>
+        /// <param name="h">Height in reference UI units. Smaller heights can clip text or reduce the click target.</param>
+        /// <param name="color">Background tint for a shape or button, or glyph tint for a label. Alpha controls opacity.</param>
+        /// <param name="image">Whether to add a background graphic. False leaves a layout-only rectangle.</param>
+        /// <param name="radius">Corner radius in reference UI units. Zero uses a normal rectangle; positive values round the corners.</param>
         RectTransform Box(Transform parent, string name, float x, float y, float w, float h, Color color, bool image = true, float radius = 0)
         {
             var go = new GameObject(name, typeof(RectTransform)); go.transform.SetParent(parent, false);
@@ -237,6 +269,16 @@ namespace Blackjack
             }
             return rect;
         }
+        /// <summary>Creates a TextMeshPro label with a specific alignment and bounds.</summary>
+        /// <param name="parent">UI container and coordinate origin. Changing it can move the element, change draw order or affect input.</param>
+        /// <param name="text">Text displayed to the player. Longer text can wrap or clip in fixed bounds.</param>
+        /// <param name="x">Horizontal offset in reference UI units. Larger values move right.</param>
+        /// <param name="y">Downward offset in reference UI units. Larger values move down.</param>
+        /// <param name="w">Width in reference UI units. Smaller widths can crop content or wrap labels.</param>
+        /// <param name="h">Height in reference UI units. Smaller heights can clip text or reduce the click target.</param>
+        /// <param name="size">Font size in reference UI units. Increasing it can reduce fit within the label bounds.</param>
+        /// <param name="color">Background tint for a shape or button, or glyph tint for a label. Alpha controls opacity.</param>
+        /// <param name="align">Text alignment within the label; changing it shifts the glyphs, not the label bounds.</param>
         TextMeshProUGUI Label(Transform parent, string text, float x, float y, float w, float h, int size, Color color, TextAnchor align = TextAnchor.MiddleCenter)
         {
             var rect = Box(parent, text, x,y,w,h,Color.clear,false);
@@ -244,6 +286,17 @@ namespace Blackjack
             label.alignment = align == TextAnchor.MiddleLeft ? TextAlignmentOptions.MidlineLeft : align == TextAnchor.MiddleRight ? TextAlignmentOptions.MidlineRight : TextAlignmentOptions.Midline;
             label.raycastTarget = false; label.textWrappingMode = TextWrappingModes.Normal; return label;
         }
+        /// <summary>Creates a clickable table button, its label and feedback; plays a click before invoking its action.</summary>
+        /// <param name="parent">UI container and coordinate origin. Changing it can move the element, change draw order or affect input.</param>
+        /// <param name="text">Text displayed to the player. Longer text can wrap or clip in fixed bounds.</param>
+        /// <param name="x">Horizontal offset in reference UI units. Larger values move right.</param>
+        /// <param name="y">Downward offset in reference UI units. Larger values move down.</param>
+        /// <param name="w">Width in reference UI units. Smaller widths can crop content or wrap labels.</param>
+        /// <param name="h">Height in reference UI units. Smaller heights can clip text or reduce the click target.</param>
+        /// <param name="color">Background tint for a shape or button, or glyph tint for a label. Alpha controls opacity.</param>
+        /// <param name="action">Callback invoked after the click sound; changing it changes what the button does.</param>
+        /// <param name="textColor">Optional label tint. Null uses the table default.</param>
+        /// <param name="rounded">True uses rounded geometry; false uses a standard Image, as needed for sprite chips.</param>
         Button MakeButton(Transform parent, string text, float x, float y, float w, float h, Color color, UnityEngine.Events.UnityAction action, Color? textColor = null, bool rounded = true)
         {
             var rect = Box(parent,text,x,y,w,h,color,true,rounded ? 12 : 0); rect.GetComponent<Image>().raycastTarget = true;
@@ -254,6 +307,7 @@ namespace Blackjack
             rect.gameObject.AddComponent<BlackjackMenuMotion>();
             button.onClick.AddListener(() => { PlayClick(); action(); }); return button;
         }
+        /// <summary>Creates a short synthesized click and configures playback.</summary>
         void MakeAudio()
         {
             audioSource = gameObject.AddComponent<AudioSource>(); audioSource.volume = .15f;
@@ -261,7 +315,9 @@ namespace Blackjack
             for (int i=0;i<samples.Length;i++) samples[i] = Mathf.Sin(i * .16f) * Mathf.Exp(-i / 280f);
             click.SetData(samples,0);
         }
+        /// <summary>Plays the existing click clip if audio has been initialized.</summary>
         void PlayClick() { if (audioSource != null) audioSource.PlayOneShot(click); }
+        /// <summary>Runs the fixed scripted scenario, captures screenshots and exits with success or failure.</summary>
         IEnumerator SmokeCheck()
         {
             // Let the player splash screen finish before collecting rendered evidence.
@@ -283,6 +339,7 @@ namespace Blackjack
             yield return new WaitForSeconds(.5f);
             Application.Quit(passed ? 0 : 1);
         }
+        /// <summary>Releases the generated audio clip.</summary>
         void OnDestroy() { if (click != null) Destroy(click); }
     }
 }

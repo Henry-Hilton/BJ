@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace Blackjack
 {
+    /// <summary>Tutorial portion of the table controller; owns the scripted practice state.</summary>
     public sealed partial class BlackjackTable
     {
         BlackjackRound savedRound;
@@ -12,6 +13,7 @@ namespace Blackjack
         UnityEngine.UI.Button tutorialNext, menuButton;
         public bool TutorialActive => savedRound != null;
 
+        /// <summary>Creates the coach panel, practice note and lesson progression button.</summary>
         void BuildTutorial()
         {
             tutorialPanel = Box(root, "Tutorial coach", 80, 185, 380, 128, new Color(.045f,.16f,.12f), true, 15);
@@ -21,6 +23,8 @@ namespace Blackjack
             tutorialNext = MakeButton(root, "NEXT LESSON [SPACE]", 88, 468, 300, 42, gold, AdvanceTutorial, ink);
             tutorialPanel.gameObject.SetActive(false); tutorialNote.gameObject.SetActive(false); tutorialNext.gameObject.SetActive(false);
         }
+        /// <summary>Adds chips to the pending bet up to the bank rounded down to a multiple of ten. The tutorial only accepts its scripted chip on the first step.</summary>
+        /// <param name="value">Chip denomination added to the selected wager. The first lesson specifically expects 50.</param>
         void AddWager(int value)
         {
             if (TutorialActive && (tutorialStep != 0 || value != 50)) return;
@@ -28,6 +32,7 @@ namespace Blackjack
             if (TutorialActive) tutorialStep = 1;
             Refresh();
         }
+        /// <summary>Saves the original round and wager, pauses its dealer and starts a separate practice round.</summary>
         public void BeginTutorial()
         {
             if (TutorialActive) return;
@@ -35,10 +40,13 @@ namespace Blackjack
             StopDealerForTutorial();
             PrepareLesson(0);
         }
+        /// <summary>Stops the existing dealer coroutine so it cannot advance the wrong round.</summary>
         void StopDealerForTutorial()
         {
             if (dealerRoutine != null) { StopCoroutine(dealerRoutine); dealerRoutine = null; }
         }
+        /// <summary>Creates a fresh practice round with the cards and bet expected by the lesson.</summary>
+        /// <param name="step">Scripted state index; lesson entry points are 0, 5, 9 and 13. Changing it changes expected actions, cards and instructions.</param>
         void PrepareLesson(int step)
         {
             StopDealerForTutorial();
@@ -51,6 +59,7 @@ namespace Blackjack
             else round.SetTestShoe(new Card(1,1), new Card(9), new Card(13,2), new Card(8,3));
             Refresh();
         }
+        /// <summary>Restores the original round and wager; restarts dealer timing if the saved round was awaiting it.</summary>
         public void EndTutorial()
         {
             if (!TutorialActive) return;
@@ -59,13 +68,18 @@ namespace Blackjack
             Refresh(); menu.Open();
             if (round.State == BlackjackRound.Phase.Dealer) dealerRoutine = StartCoroutine(DealerTurn());
         }
+        /// <summary>Checks whether the requested action is allowed at the current tutorial step.</summary>
+        /// <param name="action">Requested command: deal, hit, stand or double. The tutorial gates these commands according to its current step.</param>
         bool TutorialAllows(string action) => action == "deal" ? tutorialStep == 1 || tutorialStep == 5 || tutorialStep == 9 || tutorialStep == 13
             : action == "hit" ? tutorialStep == 2 : action == "stand" ? tutorialStep == 6 : action == "double" && tutorialStep == 10;
+        /// <summary>Advances the tutorial step after the accepted action.</summary>
+        /// <param name="action">Requested command: deal, hit, stand or double. The tutorial gates these commands according to its current step.</param>
         void TutorialAction(string action)
         {
             if (action == "deal") tutorialStep = tutorialStep == 1 ? 2 : tutorialStep == 5 ? 6 : tutorialStep == 9 ? 10 : 14;
             else tutorialStep++; // Hit: 2 -> 3; Stand: 6 -> 7; Double: 10 -> 11.
         }
+        /// <summary>Starts the next scripted lesson or finishes practice when the completion button is available.</summary>
         void AdvanceTutorial()
         {
             if (!TutorialActive || !tutorialNext.interactable) return;
@@ -74,6 +88,7 @@ namespace Blackjack
             else if (tutorialStep == 12) PrepareLesson(13);
             else if (tutorialStep == 14) EndTutorial();
         }
+        /// <summary>Updates coaching text and enables only the relevant actions; completed dealer turns advance to the result step.</summary>
         void RefreshTutorial()
         {
             bool active = TutorialActive;

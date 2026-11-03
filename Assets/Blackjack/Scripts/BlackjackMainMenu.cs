@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 namespace Blackjack
 {
     // All decoration is UI geometry; card artwork comes from the project's supplied pack.
+    /// <summary>Builds the menu and handles navigation, transitions and profile confirmation.</summary>
     public sealed partial class BlackjackMainMenu : MonoBehaviour
     {
         readonly Color gold = new Color(.84f, .69f, .43f);
@@ -26,6 +27,9 @@ namespace Blackjack
         TextMeshProUGUI rulesBackLabel;
         public bool IsOpen => canvas != null && canvas.gameObject.activeSelf;
 
+        /// <summary>Creates the menu canvas and its pages, then opens the menu.</summary>
+        /// <param name="owner">Table controller used for profile, difficulty and mode changes.</param>
+        /// <param name="art">Artwork asset providing the menu's card and chip sprites.</param>
         public void Initialize(BlackjackTable owner, BlackjackArtwork art)
         {
             table = owner;
@@ -95,6 +99,12 @@ namespace Blackjack
             BuildRules(); BuildUsernamePrompt(); Open();
         }
 
+        /// <summary>Places an animated decorative card and shadow on the menu.</summary>
+        /// <param name="parent">UI container and coordinate origin. Changing it can move the element, change draw order or affect input.</param>
+        /// <param name="sprite">Image to display. A different sprite triggers a flip in a card view, or changes the artwork on the decorative menu card.</param>
+        /// <param name="x">Horizontal offset in reference UI units. Larger values move right.</param>
+        /// <param name="y">Downward offset in reference UI units. Larger values move down.</param>
+        /// <param name="angle">Z rotation in degrees. Changing it tilts the card and shifts its idle animation phase.</param>
         void Card(Transform parent, Sprite sprite, float x, float y, float angle)
         {
             var pivot = Panel(parent, "Card presentation", x, y, 174, 252, Color.clear);
@@ -108,6 +118,7 @@ namespace Blackjack
             pivot.localRotation = Quaternion.Euler(0,0,angle);
             var motion = pivot.gameObject.AddComponent<BlackjackMenuMotion>(); motion.Floating = true; motion.Phase = angle;
         }
+        /// <summary>Builds the shared help page with rules, controls and return button.</summary>
         void BuildRules()
         {
             rules = Panel(canvas, "How to play", 0, 0, 1280, 800, new Color(.025f,.075f,.065f));
@@ -133,6 +144,7 @@ namespace Blackjack
             rulesBackLabel = Button(rules, "Back to menu", 150, 656, 280, 58, true, HideRules).GetComponentInChildren<TextMeshProUGUI>();
             rules.gameObject.SetActive(false);
         }
+        /// <summary>Opens the main menu, hides the table and refreshes profile and difficulty displays.</summary>
         public void Open()
         {
             if (transitioning) return;
@@ -147,6 +159,7 @@ namespace Blackjack
             if (entrance != null) StopCoroutine(entrance);
             entrance = StartCoroutine(Reveal());
         }
+        /// <summary>Updates the selected difficulty and disables changes while the round or tutorial forbids them.</summary>
         void RefreshDifficulty()
         {
             difficultyHint.text = table.CanChangeDifficulty ? "DEALER AI / CUSTOM RULES" : "DEALER AI / FINISH THIS HAND TO CHANGE";
@@ -159,12 +172,14 @@ namespace Blackjack
                 button.GetComponentInChildren<TextMeshProUGUI>().color = selected ? new Color(.035f,.085f,.065f) : cream;
             }
         }
+        /// <summary>Opens the username prompt if needed, otherwise enters or resumes the table.</summary>
         public void Play()
         {
             if (transitioning) return;
             if (!EnsureUsername(false)) return;
             entrance = StartCoroutine(EnterTable());
         }
+        /// <summary>Confirms the profile and enters isolated guided practice.</summary>
         public void StartTutorial()
         {
             if (transitioning) return;
@@ -172,9 +187,13 @@ namespace Blackjack
             table.BeginTutorial();
             entrance = StartCoroutine(EnterTable());
         }
+        /// <summary>Handles Escape according to the current view and ignores it during transitions.</summary>
         public void Toggle() { if (transitioning) return; if (usernamePanel.gameObject.activeSelf) { CancelUsername(); return; } if (!IsOpen) Open(); else if (rules.gameObject.activeSelf) HideRules(); else Play(); }
+        /// <summary>Transitions from the main menu to the rules page.</summary>
         public void ShowRules() { if (!transitioning) entrance = StartCoroutine(SwitchPage(true)); }
+        /// <summary>Returns to the menu or directly to the table depending on where help was opened.</summary>
         public void HideRules() { if (transitioning) return; if (helpFromTable) Play(); else entrance = StartCoroutine(SwitchPage(false)); }
+        /// <summary>Opens the rules page from gameplay without resetting the hand.</summary>
         public void OpenHelp()
         {
             if (transitioning || IsOpen) return;
@@ -184,6 +203,7 @@ namespace Blackjack
             page.gameObject.SetActive(false); rules.gameObject.SetActive(true);
             entrance = StartCoroutine(RevealHelp());
         }
+        /// <summary>Fades in the help screen and restores interaction and selection.</summary>
         IEnumerator RevealHelp()
         {
             transitioning = true; canvasGroup.interactable = false;
@@ -191,6 +211,8 @@ namespace Blackjack
             canvasGroup.interactable = true; transitioning = false;
             rules.GetComponentInChildren<UnityEngine.UI.Button>().Select(); entrance = null;
         }
+        /// <summary>Transitions between the main menu and rules page with input blocked.</summary>
+        /// <param name="guide">True transitions to rules; false transitions back to the menu.</param>
         IEnumerator SwitchPage(bool guide)
         {
             transitioning = true; canvasGroup.interactable = false;
@@ -204,6 +226,7 @@ namespace Blackjack
             if (guide) rules.GetComponentInChildren<UnityEngine.UI.Button>().Select(); else playButton.Select();
             entrance = null;
         }
+        /// <summary>Shows the table, clears menu focus and fades out the menu canvas.</summary>
         IEnumerator EnterTable()
         {
             transitioning = true; if (!table.TutorialActive) hasPlayed = true; canvasGroup.interactable = false;
@@ -212,6 +235,11 @@ namespace Blackjack
             yield return Fade(canvasGroup, 1, 0, .3f);
             canvas.gameObject.SetActive(false); transitioning = false; entrance = null;
         }
+        /// <summary>Interpolates canvas opacity over unscaled seconds.</summary>
+        /// <param name="target">Canvas group whose opacity is animated. Its children fade together.</param>
+        /// <param name="from">Starting alpha from 0 (transparent) to 1 (opaque).</param>
+        /// <param name="to">Final alpha from 0 (transparent) to 1 (opaque).</param>
+        /// <param name="duration">Fade duration in unscaled seconds. Larger positive values slow the transition.</param>
         static IEnumerator Fade(CanvasGroup target, float from, float to, float duration)
         {
             target.alpha = from;
@@ -221,6 +249,7 @@ namespace Blackjack
             }
             target.alpha = to;
         }
+        /// <summary>Fades and slides the main page into position while blocking input.</summary>
         IEnumerator Reveal()
         {
             transitioning = true; canvasGroup.interactable = false; group.alpha = 0;
@@ -232,6 +261,7 @@ namespace Blackjack
             }
             page.anchoredPosition = origin; group.alpha = 1; canvasGroup.interactable = true; transitioning = false; playButton.Select(); entrance = null;
         }
+        /// <summary>Stops Play mode in the Unity Editor or quits a standalone build.</summary>
         static void Quit()
         {
 #if UNITY_EDITOR
@@ -240,6 +270,16 @@ namespace Blackjack
             Application.Quit();
 #endif
         }
+        /// <summary>Creates a positioned menu rectangle with optional background artwork.</summary>
+        /// <param name="parent">UI container and coordinate origin. Changing it can move the element, change draw order or affect input.</param>
+        /// <param name="name">Hierarchy object name. Changing it primarily affects debugging and name-based lookups.</param>
+        /// <param name="x">Horizontal offset in reference UI units. Larger values move right.</param>
+        /// <param name="y">Downward offset in reference UI units. Larger values move down.</param>
+        /// <param name="w">Width in reference UI units. Smaller widths can crop content or wrap labels.</param>
+        /// <param name="h">Height in reference UI units. Smaller heights can clip text or reduce the click target.</param>
+        /// <param name="color">Background tint for a shape or button, or glyph tint for a label. Alpha controls opacity.</param>
+        /// <param name="addImage">True creates a background graphic; false creates a layout-only rectangle.</param>
+        /// <param name="radius">Corner radius in reference UI units. Zero uses a normal rectangle; positive values round the corners.</param>
         RectTransform Panel(Transform parent, string name, float x, float y, float w, float h, Color color, bool addImage = true, float radius = 0)
         {
             var go = new GameObject(name, typeof(RectTransform));
@@ -257,6 +297,17 @@ namespace Blackjack
             }
             return rect;
         }
+        /// <summary>Creates a TextMeshPro label at a menu-relative location.</summary>
+        /// <param name="parent">UI container and coordinate origin. Changing it can move the element, change draw order or affect input.</param>
+        /// <param name="value">Displayed string; changing it affects the label only and longer strings may wrap.</param>
+        /// <param name="x">Horizontal offset in reference UI units. Larger values move right.</param>
+        /// <param name="y">Downward offset in reference UI units. Larger values move down.</param>
+        /// <param name="w">Width in reference UI units. Smaller widths can crop content or wrap labels.</param>
+        /// <param name="h">Height in reference UI units. Smaller heights can clip text or reduce the click target.</param>
+        /// <param name="size">Font size in reference UI units. Increasing it can reduce fit within the label bounds.</param>
+        /// <param name="color">Background tint for a shape or button, or glyph tint for a label. Alpha controls opacity.</param>
+        /// <param name="spacing">Extra spacing between glyphs. Larger values spread the text and can cause wrapping.</param>
+        /// <param name="align">Text alignment within the label; changing it shifts the glyphs, not the label bounds.</param>
         TextMeshProUGUI Text(Transform parent, string value, float x, float y, float w, float h, float size, Color color, float spacing = 0, TextAlignmentOptions align = TextAlignmentOptions.TopLeft)
         {
             var rect = Panel(parent, value, x,y,w,h,Color.clear,false);
@@ -265,6 +316,15 @@ namespace Blackjack
             text.characterSpacing = spacing; text.alignment = align; text.raycastTarget = false;
             text.textWrappingMode = TextWrappingModes.Normal; return text;
         }
+        /// <summary>Creates a styled menu button that invokes the supplied action.</summary>
+        /// <param name="parent">UI container and coordinate origin. Changing it can move the element, change draw order or affect input.</param>
+        /// <param name="label">Button caption; changing it does not change the callback.</param>
+        /// <param name="x">Horizontal offset in reference UI units. Larger values move right.</param>
+        /// <param name="y">Downward offset in reference UI units. Larger values move down.</param>
+        /// <param name="w">Width in reference UI units. Smaller widths can crop content or wrap labels.</param>
+        /// <param name="h">Height in reference UI units. Smaller heights can clip text or reduce the click target.</param>
+        /// <param name="primary">True selects the prominent gold style and arrow; false selects the secondary style.</param>
+        /// <param name="action">Callback invoked when the button is clicked; changing it changes the menu operation.</param>
         UnityEngine.UI.Button Button(Transform parent, string label, float x, float y, float w, float h, bool primary, UnityEngine.Events.UnityAction action)
         {
             var rect = Panel(parent, label, x,y,w,h,primary ? gold : new Color(.06f,.13f,.11f), true, primary ? 14 : 9);

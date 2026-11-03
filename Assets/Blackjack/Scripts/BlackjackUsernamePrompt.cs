@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace Blackjack
 {
+    /// <summary>Profile confirmation portion of the menu; routes the player to the chosen mode.</summary>
     public sealed partial class BlackjackMainMenu
     {
         RectTransform usernamePanel;
@@ -10,6 +11,7 @@ namespace Blackjack
         UnityEngine.UI.Button usernameContinue;
         bool usernameConfirmed, pendingTutorial;
 
+        /// <summary>Builds the shared username and avatar form and wires validation and submission.</summary>
         void BuildUsernamePrompt()
         {
             usernamePanel = Panel(canvas, "Player name prompt", 0, 0, 1280, 800, new Color(.025f,.075f,.065f));
@@ -42,6 +44,8 @@ namespace Blackjack
             BuildAvatarEditor(card);
             usernamePanel.gameObject.SetActive(false);
         }
+        /// <summary>Checks a trimmed name for length and permitted characters; whitespace-only names are invalid.</summary>
+        /// <param name="value">Candidate display name. The trimmed value must be 2–16 characters using allowed characters.</param>
         static bool ValidUsername(string value)
         {
             if (string.IsNullOrWhiteSpace(value)) return false;
@@ -51,6 +55,8 @@ namespace Blackjack
                 if (!char.IsLetterOrDigit(character) && character != ' ' && character != '_' && character != '-') return false;
             return true;
         }
+        /// <summary>Returns true if this session already confirmed a profile; otherwise opens the form and records which mode to start.</summary>
+        /// <param name="tutorial">True continues to practice after confirmation; false continues to regular play.</param>
         bool EnsureUsername(bool tutorial)
         {
             if (usernameConfirmed) return true;
@@ -59,6 +65,7 @@ namespace Blackjack
             OpenProfileForm();
             return false;
         }
+        /// <summary>Validates name and colors, saves the draft, applies it to the table and continues to the intended destination.</summary>
         void ConfirmUsername()
         {
             if (!usernamePanel.gameObject.activeSelf || !ValidUsername(usernameInput.text) || !ProfileColorsValid()) return;
@@ -69,12 +76,14 @@ namespace Blackjack
             if (editingProfile) { editingProfile = false; Open(); }
             else if (pendingTutorial) StartTutorial(); else Play();
         }
+        /// <summary>Discards the uncommitted form edits and returns to the main menu.</summary>
         void CancelUsername()
         {
             usernameInput.DeactivateInputField(); usernamePanel.gameObject.SetActive(false);
             editingProfile = false;
             page.gameObject.SetActive(true); group.alpha = 1; playButton.Select();
         }
+        /// <summary>Uses a temporary name to bypass the interactive prompt in the scripted smoke run.</summary>
         internal void UseSmokeProfile() { usernameConfirmed = true; table.SetPlayerName("Demo Player"); }
     }
 }

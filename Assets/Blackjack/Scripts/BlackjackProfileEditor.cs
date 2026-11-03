@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace Blackjack
 {
+    /// <summary>Profile editor portion of the menu; edits a draft until the player saves.</summary>
     public sealed partial class BlackjackMainMenu
     {
         BlackjackPlayerProfile draftProfile;
@@ -17,6 +18,7 @@ namespace Blackjack
         BlackjackAvatarGraphic menuAvatar;
         TextMeshProUGUI menuInitials;
 
+        /// <summary>Creates the small menu avatar and initials label.</summary>
         void BuildMenuAvatar()
         {
             var rect = Panel(page, "Menu avatar", 984, 34, 40, 40, Color.clear, false);
@@ -24,12 +26,15 @@ namespace Blackjack
             menuInitials = Text(rect, "", 0, 0, 40, 40, 16, cream, 0, TextAlignmentOptions.Midline);
             menuInitials.richText = false;
         }
+        /// <summary>Redraws the menu avatar from the table's active profile.</summary>
         void RefreshMenuAvatar()
         {
             menuAvatar.Apply(table.Profile); menuInitials.text = table.Profile.Initials;
             menuInitials.color = BlackjackAvatarGraphic.InitialColor(table.Profile);
         }
 
+        /// <summary>Builds the preview, style choices, swatches, RGB sliders and hex inputs.</summary>
+        /// <param name="card">Parent profile card that owns the editor controls and their coordinates.</param>
         void BuildAvatarEditor(RectTransform card)
         {
             var editor = Panel(card, "Avatar editor", 500, 28, 404, 552, Color.clear, false);
@@ -87,6 +92,10 @@ namespace Blackjack
             }
             Text(editor, "Choose a swatch, enter a hex color, or mix RGB.", 0, 526, 404, 22, 11, muted);
         }
+        /// <summary>Creates a single-line RGB hex input allowing a leading hash and six digits.</summary>
+        /// <param name="parent">UI container and coordinate origin. Changing it can move the element, change draw order or affect input.</param>
+        /// <param name="x">Horizontal offset in reference UI units. Larger values move right.</param>
+        /// <param name="y">Downward offset in reference UI units. Larger values move down.</param>
         TMP_InputField BuildHexField(Transform parent, float x, float y)
         {
             var field = Panel(parent, "Hex color", x, y, 196, 42, new Color(.025f,.075f,.065f), true, 9);
@@ -101,6 +110,10 @@ namespace Blackjack
             input.onValidateInput = (value, index, c) => "0123456789abcdefABCDEF#".IndexOf(c) >= 0 ? char.ToUpperInvariant(c) : '\0';
             input.customCaretColor = true; input.caretColor = gold; return input;
         }
+        /// <summary>Creates a whole-number RGB slider with a 0–255 range.</summary>
+        /// <param name="parent">UI container and coordinate origin. Changing it can move the element, change draw order or affect input.</param>
+        /// <param name="x">Horizontal offset in reference UI units. Larger values move right.</param>
+        /// <param name="y">Downward offset in reference UI units. Larger values move down.</param>
         UnityEngine.UI.Slider BuildColorSlider(Transform parent, float x, float y)
         {
             var rect = Panel(parent, "RGB slider", x, y, 296, 24, Color.clear);
@@ -118,11 +131,13 @@ namespace Blackjack
             slider.minValue = 0; slider.maxValue = 255; slider.wholeNumbers = true;
             return slider;
         }
+        /// <summary>Opens the profile form in edit mode unless the menu is transitioning.</summary>
         public void ShowProfileEditor()
         {
             if (transitioning) return;
             editingProfile = true; OpenProfileForm();
         }
+        /// <summary>Creates a draft copy, loads the controls and focuses the username field.</summary>
         void OpenProfileForm()
         {
             page.gameObject.SetActive(false); rules.gameObject.SetActive(false); usernamePanel.gameObject.SetActive(true);
@@ -132,13 +147,18 @@ namespace Blackjack
             usernameContinue.GetComponentInChildren<TextMeshProUGUI>().text = editingProfile ? "SAVE PROFILE   >" : "CONTINUE   >";
             usernameInput.Select(); usernameInput.ActivateInputField();
         }
+        /// <summary>Requires a valid primary color and, in gradient mode, a valid secondary color.</summary>
         bool ProfileColorsValid() => BlackjackPlayerProfile.TryColor(colorInputs[0].text, out _)
             && (draftProfile.avatarStyle == AvatarStyle.Solid || BlackjackPlayerProfile.TryColor(colorInputs[1].text, out _));
+        /// <summary>Changes the selected endpoint and synchronizes controls and preview.</summary>
+        /// <param name="hex">Six-digit RGB string for the active endpoint. A different value changes the preview and future saved avatar.</param>
         void SetActiveColor(string hex)
         {
             if (editSecondColor) draftProfile.colorB = hex; else draftProfile.colorA = hex;
             RefreshProfileEditor(true);
         }
+        /// <summary>Synchronizes draft values, valid inputs, enabled controls and avatar preview.</summary>
+        /// <param name="syncFields">True rewrites hex fields from the draft; false preserves typed text, including incomplete input.</param>
         void RefreshProfileEditor(bool syncFields)
         {
             if (draftProfile == null || avatarPreview == null) return;

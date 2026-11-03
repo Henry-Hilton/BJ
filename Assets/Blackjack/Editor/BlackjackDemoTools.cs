@@ -5,9 +5,11 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using Blackjack;
 
+/// <summary>Unity Editor commands for validation and Windows build creation.</summary>
 public static class BlackjackDemoTools
 {
     [MenuItem("Blackjack/Run Rule Checks")]
+    /// <summary>Runs profile checks, fixed rule scenarios and 500 simulations per difficulty. Throws on failure and writes the result under Logs.</summary>
     public static void CheckRules()
     {
         int checks = 0;
@@ -74,6 +76,7 @@ public static class BlackjackDemoTools
     }
 
     [MenuItem("Blackjack/Build Windows Demo")]
+    /// <summary>Runs rule checks before building the Windows player, then throws if the build fails. Changes PlayerSettings for the demo.</summary>
     public static void BuildDemo()
     {
         CheckRules();
